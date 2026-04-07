@@ -1,0 +1,30 @@
+{
+  "name": "headless-components",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "input-otp": "^1.4.2",
+    "react": "^18.3.1",
+    "react-aria-components": "^1.7.0",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.0",
+    "@storybook/addon-interactions": "^8.6.0",
+    "@storybook/react-vite": "^8.6.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/react": "^18.3.21",
+    "@types/react-dom": "^18.3.5",
+    "@untitledui/icons": "^0.0.22",
+    "clsx": "^2.1.1",
+    "storybook": "^8.6.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.15"
+  }
+}

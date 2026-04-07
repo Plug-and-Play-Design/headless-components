@@ -1,0 +1,8 @@
+{
+  "aliases": {
+    "components": "@org/ui/untitledui",
+    "utils": "@org/ui/untitledui/utils",
+    "hooks": "@org/ui/untitledui/hooks",
+    "styles": "@org/ui/untitledui/styles"
+  }
+}

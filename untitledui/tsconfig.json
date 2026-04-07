@@ -1,0 +1,14 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"rootDir": ".",
+		"paths": {
+			"@org/ui/untitledui": ["."],
+			"@org/ui/untitledui/*": ["./*"],
+			"@org/utils": ["../utils.ts"],
+		},
+	},
+	"include": ["./**/*.ts", "./**/*.tsx"],
+	"exclude": ["node_modules", "dist"],
+}
