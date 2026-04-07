@@ -8,7 +8,7 @@ export interface HeroScreenMockup03Props {
 		url: string
 		alt: string
 	}
-	backgroundColor?: `bg-${string}`
+	backgroundColor?: `bg-${string}` | ""
 	backgroundImage?: {
 		url: string
 		alt: string
