@@ -2,6 +2,7 @@ import type { Block } from "payload"
 
 export const SocialProofFullWidthMasked: Block = {
 	slug: "social-proof-full-width-masked",
+    dBname: "spfwm", // Shortened DB name to avoid hitting limits
 	fields: [
 		{
 			type: "tabs",
