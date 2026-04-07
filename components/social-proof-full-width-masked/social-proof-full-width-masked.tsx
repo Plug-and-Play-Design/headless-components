@@ -1,7 +1,7 @@
 import { type SocialProofFullWidthMaskedProps } from "./types";
 import { cn } from "@org/utils"
 
-export const SocialProofFullWidthMasked = (
+export const SocialProofFullWidthMaskedBlock = (
   props: SocialProofFullWidthMaskedProps,
 ) => {
   return (
