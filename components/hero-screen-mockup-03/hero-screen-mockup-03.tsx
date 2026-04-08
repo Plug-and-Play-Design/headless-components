@@ -19,15 +19,23 @@ export const HeroScreenMockup03Block = (props: HeroScreenMockup03Props) => {
 			<section className="relative py-16 md:py-24">
 				<div className="mx-auto w-full max-w-container px-4 md:px-8">
 					<div className="mx-auto flex max-w-5xl flex-col items-center text-center">
-						<h1 className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
-							{props.heading ?? "Beautiful banking to grow smarter"}
-						</h1>
-						<div className="mt-4 max-w-3xl text-balance text-tertiary md:mt-6 md:text-xl">
-							{props.content}
-						</div>
-						{props.buttons && (
+						{props.heading && (() => {
+							const HeadingTag = props.headingLevel || "h1"
+							return (
+								<HeadingTag className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
+									{props.heading}
+								</HeadingTag>
+							)
+						})()}
+						
+						{props.supportingText && (
+							<div className="mt-4 max-w-3xl text-balance text-tertiary md:mt-6 md:text-xl">
+								{props.supportingText}
+							</div>
+						)}
+						{props.actions && (
 							<div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 sm:w-auto sm:flex-row sm:items-start md:mt-12">
-								{props.buttons.map((button, index) => (
+								{props.actions.map((button, index) => (
 									<Button key={index} {...button} />
 								))}
 							</div>

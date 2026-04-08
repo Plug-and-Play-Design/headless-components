@@ -11,9 +11,9 @@ export const SocialProofFullWidthMasked: Block = {
 					label: "Content",
 					fields: [
 						{
-							name: "content",
+                            label: "Content",
+							name: "text",
 							type: "text",
-							label: "Tagline",
 							defaultValue: "Trusted by 4,000+ companies",
 						},
 						{

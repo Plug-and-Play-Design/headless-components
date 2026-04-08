@@ -50,7 +50,8 @@ export const HeroScreenMockup03: Block = {
 							],
 						},
 						{
-							name: "content",
+							label: "Content",
+							name: "supportingText",
 							type: "richText",
 							editor: lexicalEditor({
 								features: ({ rootFeatures }) => {
@@ -67,7 +68,8 @@ export const HeroScreenMockup03: Block = {
 							}),
 						},
 						{
-							name: "buttons",
+							label: "Buttons",
+							name: "actions",
 							type: "array",
 							maxRows: 2,
 							fields: [
