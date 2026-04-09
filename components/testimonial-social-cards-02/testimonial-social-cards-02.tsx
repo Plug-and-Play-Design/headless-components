@@ -1,7 +1,7 @@
 import { AvatarLabelGroup } from "@org/ui/untitledui/base/avatar/avatar-label-group";
 import { VerifiedTick } from "@org/ui/untitledui/base/avatar/base-components";
 import { StarIcon } from "@org/ui/untitledui/foundations/rating-stars";
-import type { TestimonialSocialCards02BrandProps } from "./types";
+import type { TestimonialSocialCards02Props } from "./types";
 import { cn } from "@org/utils";
 
 const fallbackReviews = [
@@ -46,8 +46,8 @@ const fallbackReviews = [
   },
 ];
 
-export const TestimonialSocialCards02BrandBlock = (
-  props: TestimonialSocialCards02BrandProps,
+export const TestimonialSocialCards02Block = (
+  props: TestimonialSocialCards02Props,
 ) => {
   const reviews = props.reviews || fallbackReviews;
   return (

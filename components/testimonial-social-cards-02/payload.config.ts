@@ -1,8 +1,8 @@
 import type { Block } from "payload"
 
-export const TestimonialSocialCards02Brand: Block = {
-	slug: "testimonial-social-cards-02-brand",
-	dbName: "tsc02brand", // Shortened DB name to avoid hitting limits
+export const TestimonialSocialCards02: Block = {
+	slug: "testimonial-social-cards-02",
+	dbName: "tsc02", // Shortened DB name to avoid hitting limits
 	fields: [
 		{
 			type: "tabs",

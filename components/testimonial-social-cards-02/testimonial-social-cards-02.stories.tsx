@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react-vite"
 import { expect, within } from "storybook/test"
-import { TestimonialSocialCards02BrandBlock } from "./testimonial-social-cards-02-brand"
+import { TestimonialSocialCards02Block } from "./testimonial-social-cards-02"
 
 const meta = {
 	title: "Components/Testimonial Social Cards 02 Brand",
-	component: TestimonialSocialCards02BrandBlock,
+	component: TestimonialSocialCards02Block,
 	args: {
 		heading: "Don't just take our word for it",
 		supportingText: "Hear from some of our amazing customers who are building faster.",
@@ -21,7 +21,7 @@ const meta = {
 		reviews: { control: false },
 		cards: { control: false },
 	},
-} satisfies Meta<typeof TestimonialSocialCards02BrandBlock>
+} satisfies Meta<typeof TestimonialSocialCards02Block>
 
 export default meta
 type Story = StoryObj<typeof meta>
