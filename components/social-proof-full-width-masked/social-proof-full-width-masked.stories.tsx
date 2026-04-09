@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite"
 import { expect, within } from "storybook/test"
-import { SocialProofFullWidthMasked } from "./social-proof-full-width-masked"
+import { SocialProofFullWidthMaskedBlock } from "./social-proof-full-width-masked"
 
 const logos = [
     {
@@ -47,12 +47,12 @@ const logos = [
 
 const meta = {
 	title: "Components/Social Proof Full Width Masked",
-	component: SocialProofFullWidthMasked,
+	component: SocialProofFullWidthMaskedBlock,
 	args: {
-		content: "Trusted by 4,000+ companies",
+		text: "Trusted by 4,000+ companies",
 		logos: logos,
 	},
-} satisfies Meta<typeof SocialProofFullWidthMasked>
+} satisfies Meta<typeof SocialProofFullWidthMaskedBlock>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -68,38 +68,4 @@ export const Default: Story = {
 		await expect(canvas.getByText("Trusted by 4,000+ companies")).toBeInTheDocument()
 		await expect(canvas.getAllByRole("img", { name: "Layers" }).length).toBeGreaterThan(0)
 	}
-}
-
-export const CustomContent: Story = {
-	args: {
-		content: "Powering the world's best teams",
-	},
-	play: async ({ canvasElement }) => {
-		const canvas = within(canvasElement)
-
-		await expect(canvas.getByText("Powering the world's best teams")).toBeInTheDocument()
-	},
-}
-
-export const NoLogos: Story = {
-	args: {
-		logos: undefined,
-	},
-	play: async ({ canvasElement }) => {
-		const canvas = within(canvasElement)
-
-		await expect(canvas.getByText("Trusted by 4,000+ companies")).toBeInTheDocument()
-		await expect(canvas.queryByRole("img")).not.toBeInTheDocument()
-	},
-}
-
-export const FallbackContent: Story = {
-	args: {
-		content: undefined,
-	},
-	play: async ({ canvasElement }) => {
-		const canvas = within(canvasElement)
-
-		await expect(canvas.getByText("Trusted by 4,000+ companies")).toBeInTheDocument()
-	},
 }

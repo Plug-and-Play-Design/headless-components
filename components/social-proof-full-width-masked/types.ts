@@ -1,11 +1,3 @@
-import { type Props as ButtonProps } from "@org/ui/untitledui/base/buttons/button"
+import type { WithText, WithLogos, WithBackground } from "@org/ui/components/props"
 
-export interface SocialProofFullWidthMaskedProps {
-    text?: React.ReactNode
-    logos?: {
-        name: string
-        imageUrl: string
-        url?: string
-    }[]
-    backgroundColor?: `bg-${string}` | ""
-}
+export interface SocialProofFullWidthMaskedProps extends WithText, WithLogos, WithBackground {}

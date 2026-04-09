@@ -25,3 +25,6 @@ Thumbs.db
 # TypeScript build output
 dist/
 *.tsbuildinfo
+
+# Other
+/untitledui

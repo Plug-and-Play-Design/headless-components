@@ -14,6 +14,7 @@
     "paths": {
       "@org/ui/untitledui": ["./untitledui/index.ts"],
       "@org/ui/untitledui/*": ["./untitledui/*"],
+      "@org/ui/components/props": ["./components/props.ts"],
       "@org/utils": ["./utils.ts"],
       "storybook/test": ["./node_modules/@storybook/test/dist/index.d.ts"]
     }

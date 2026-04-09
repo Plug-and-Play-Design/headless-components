@@ -1,17 +1,8 @@
-import { type Props as ButtonProps } from "@org/ui/untitledui/base/buttons/button"
+import type { WithHeading, WithSupportingText, WithActions, WithImage, WithBackground } from "@org/ui/components/props"
 
-export interface HeroScreenMockup03Props {
-	heading?: string
-	headingLevel?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
-	supportingText?: React.ReactNode
-	actions?: ButtonProps[]
-	image?: {
-		url: string
-		alt: string
-	}
-	backgroundColor?: `bg-${string}` | ""
-	backgroundImage?: {
-		url: string
-		alt: string
-	}
-}
+export interface HeroScreenMockup03Props
+	extends WithHeading,
+		WithSupportingText,
+		WithActions,
+		WithImage,
+		WithBackground {}
