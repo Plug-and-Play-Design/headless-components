@@ -1,3 +1,5 @@
+"use client"
+
 import { AvatarLabelGroup } from "@org/ui/untitledui/base/avatar/avatar-label-group";
 import { VerifiedTick } from "@org/ui/untitledui/base/avatar/base-components";
 import { StarIcon } from "@org/ui/untitledui/foundations/rating-stars";
