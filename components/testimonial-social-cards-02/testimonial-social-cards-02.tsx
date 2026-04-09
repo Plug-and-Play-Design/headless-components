@@ -54,7 +54,7 @@ export const TestimonialSocialCards02Block = (
     <div
       className={cn(
         "flex flex-col items-center gap-16 py-16 lg:py-24",
-        props.backgroundColor || "bg-brand-section",
+        props.backgroundColor || "bg-primary",
       )}
     >
       <div className="flex max-w-container flex-col items-center gap-4 px-4 text-center lg:gap-5 lg:px-8">
@@ -62,13 +62,13 @@ export const TestimonialSocialCards02Block = (
           (() => {
             const HeadingTag = props.headingLevel || "h1";
             return (
-              <HeadingTag className="text-display-md font-semibold text-primary_on-brand md:text-display-lg lg:text-display-xl">
+              <HeadingTag className="text-display-md font-semibold text-primary md:text-display-lg lg:text-display-xl">
                 {props.heading}
               </HeadingTag>
             );
           })()}
         {props.supportingText && (
-          <p className="text-lg text-tertiary_on-brand lg:text-xl">
+          <p className="text-lg text-tertiary lg:text-xl">
             {props.supportingText}
           </p>
         )}
@@ -79,7 +79,7 @@ export const TestimonialSocialCards02Block = (
             key={index}
             className={cn(
               "flex flex-col items-start gap-8 rounded-xl p-6 lg:justify-between lg:p-8",
-              props.cards?.backgroundColor || "bg-brand-section_subtle",
+              props.cards?.backgroundColor || "bg-secondary",
             )}
           >
             <div className="flex flex-col items-start gap-4">
@@ -91,7 +91,7 @@ export const TestimonialSocialCards02Block = (
                 </div>
               )}
               {review.quote && (
-                <blockquote className="text-md font-medium text-primary_on-brand">
+                <blockquote className="text-md font-medium text-primary">
                   {review.quote}
                 </blockquote>
               )}
@@ -108,13 +108,13 @@ export const TestimonialSocialCards02Block = (
                   alt={review.author.name}
                   avatarClassName="bg-primary"
                   title={
-                    <span className="relative flex items-center gap-1 text-primary_on-brand">
+                    <span className="relative flex items-center gap-1 text-primary">
                       {review.author.name}
                       <VerifiedTick size="lg" />
                     </span>
                   }
                   subtitle={
-                    <span className="text-tertiary_on-brand underline decoration-1 underline-offset-4">
+                    <span className="text-tertiary underline decoration-1 underline-offset-4">
                       {review.author.username}
                     </span>
                   }
