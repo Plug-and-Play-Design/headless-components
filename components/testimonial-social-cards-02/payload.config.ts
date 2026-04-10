@@ -1,4 +1,13 @@
 import type { Block } from "payload"
+import {
+	FixedToolbarFeature,
+	InlineToolbarFeature,
+	lexicalEditor,
+	HeadingFeature,
+	OrderedListFeature,
+	UnorderedListFeature,
+	BlockquoteFeature,
+} from "@payloadcms/richtext-lexical"
 
 export const TestimonialSocialCards02: Block = {
 	slug: "testimonial-social-cards-02",
@@ -38,9 +47,22 @@ export const TestimonialSocialCards02: Block = {
 							],
 						},
 						{
+							label: "Content",
 							name: "supportingText",
-							type: "text",
-							label: "Supporting Text",
+							type: "richText",
+							editor: lexicalEditor({
+								features: ({ rootFeatures }) => {
+									return [
+										...rootFeatures,
+										FixedToolbarFeature(),
+										InlineToolbarFeature(),
+										HeadingFeature(),
+										OrderedListFeature(),
+										UnorderedListFeature(),
+										BlockquoteFeature(),
+									]
+								},
+							}),
 						},
 						{
 							name: "reviews",

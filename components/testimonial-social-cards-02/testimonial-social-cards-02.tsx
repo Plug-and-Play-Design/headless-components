@@ -70,9 +70,9 @@ export const TestimonialSocialCards02Block = (
             );
           })()}
         {props.supportingText && (
-          <p className="text-lg text-tertiary lg:text-xl">
+          <div className="text-lg text-tertiary lg:text-xl">
             {props.supportingText}
-          </p>
+          </div>
         )}
       </div>
       <div className="grid max-w-container grid-cols-1 gap-5 px-4 lg:grid-cols-3 lg:gap-6 lg:px-8">
