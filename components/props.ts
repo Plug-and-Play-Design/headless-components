@@ -1,4 +1,5 @@
 import type { Props as ButtonProps } from "@org/ui/untitledui/base/buttons/button"
+import type { BadgeColor } from "@org/ui/untitledui/base/badges/badges";
 
 // ─── Primitive / Atomic Types ──────────────────────────────────────────────
 
@@ -35,6 +36,27 @@ export type Cards = {
 	backgroundColor?: BackgroundColor
 }
 
+export type Article = {
+	 id: string;
+		href: string;
+		thumbnailUrl: string;
+		title: string;
+		summary: string;
+		category: {
+			href: string;
+			name: string;
+		};
+		author: {
+			href: string;
+			name: string;
+			avatarUrl: string;
+		};
+		publishedAt: string;
+		readingTime: string;
+		tags: Array<{ name: string; color: BadgeColor<"color">; href: string }>;
+		isFeatured?: boolean;
+}
+
 // ─── Scalar Aliases ────────────────────────────────────────────────────────
 
 /** HTML heading element level. */
@@ -51,6 +73,12 @@ export type BackgroundColor = `bg-${string}` | ""
 export interface WithHeading {
 	heading?: string
 	headingLevel?: HeadingLevel
+}
+
+/** Figma layer: "Subheading" */
+export interface WithSubheading {
+	subheading?: string
+	subheadingLevel?: HeadingLevel
 }
 
 /** Figma layer: "Supporting text" */
@@ -96,4 +124,8 @@ export interface WithReviews {
 
 export interface WithCards {
 	cards?: Cards
+}
+
+export interface WithArticles {
+	articles?: Article[]
 }
