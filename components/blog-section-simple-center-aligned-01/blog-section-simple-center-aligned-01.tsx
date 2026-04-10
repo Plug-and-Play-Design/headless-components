@@ -1,6 +1,6 @@
 "use client"
 import { Button } from "@org/ui/untitledui/base/buttons/button";
-import { Simple03Vertical } from "@org/ui/untitledui/marketing/blog/base-components/blog-cards";
+import { Simple03Vertical } from "./blog-cards";
 import type { BlogSectionSimpleCenterAligned01Props } from "./types";
 
 export const BlogSectionSimpleCenterAligned01Block = (props: BlogSectionSimpleCenterAligned01Props) => {
