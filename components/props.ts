@@ -65,6 +65,12 @@ export type HeadingLevel = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 /** A Tailwind background-color utility class (or empty string to inherit). */
 export type BackgroundColor = `bg-${string}` | ""
 
+/** A URL pointing to a web-safe video file (mp4, webm, ogg). */
+export type VideoSrc = `${string}.${"mp4" | "webm" | "ogg"}${string}`
+
+/** A URL pointing to a web-safe image file (jpg, jpeg, png, gif, webp, avif, svg). */
+export type VideoThumbnailUrl = `${string}.${"jpg" | "jpeg" | "png" | "gif" | "webp" | "avif" | "svg"}${string}`
+
 // ─── Prop Mixins (named after Figma layers) ────────────────────────────────
 // Use these with `extends` in component prop interfaces so the interface
 // names stay in sync with the Figma layer names they represent.
@@ -128,4 +134,9 @@ export interface WithCards {
 
 export interface WithArticles {
 	articles?: Article[]
+}
+
+export interface WithVideo {
+	videoSrc?: VideoSrc
+	videoThumbnailUrl?: VideoThumbnailUrl
 }
