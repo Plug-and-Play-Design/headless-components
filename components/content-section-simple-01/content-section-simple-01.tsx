@@ -17,9 +17,9 @@ export const ContentSectionSimple01Block = (props: ContentSectionSimple01Props) 
 						})()}
 
 						{props.supportingText && (
-							<p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
+							<div className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
 								{props.supportingText}
-							</p>
+							</div>
 						)}
 					</div>
 
