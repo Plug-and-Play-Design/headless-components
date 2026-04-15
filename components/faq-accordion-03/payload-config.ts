@@ -9,7 +9,7 @@ import {
 	BlockquoteFeature,
 } from "@payloadcms/richtext-lexical"
 
-export const FAQAccordion03: Block = {
+export const FaqAccordion03: Block = {
 	slug: "faq-accordion-03",
 	dbName: "faqAcc03",
 	fields: [

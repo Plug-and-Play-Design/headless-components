@@ -2,9 +2,9 @@
 import { useState } from "react"
 import { motion } from "motion/react"
 import { cx } from "@org/ui/untitledui/utils/cx"
-import type { FAQAccordion03Props } from "./types"
+import type { FaqAccordion03Props } from "./types"
 
-export const FAQAccordion03Block = (props: FAQAccordion03Props) => {
+export const FaqAccordion03Block = (props: FaqAccordion03Props) => {
 	const [openQuestions, setOpenQuestions] = useState(new Set([0]))
 
 	const handleToggle = (index: number) => {

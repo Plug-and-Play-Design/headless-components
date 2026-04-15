@@ -10,4 +10,4 @@ export interface WithFaqItems {
 	faqItems?: FaqItem[]
 }
 
-export interface FAQAccordion03Props extends WithHeading, WithSubheading, WithSupportingText, WithFaqItems {}
+export interface FaqAccordion03Props extends WithHeading, WithSubheading, WithSupportingText, WithFaqItems {}
