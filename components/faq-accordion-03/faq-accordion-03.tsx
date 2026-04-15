@@ -96,7 +96,7 @@ export const FAQAccordion03Block = (props: FAQAccordion03Props) => {
 										}}
 									>
 										<div className="pt-1 pr-12">
-											<p className="text-md text-tertiary">{faq.answer}</p>
+											<div className="text-md text-tertiary">{faq.answer}</div>
 										</div>
 									</motion.div>
 								</div>

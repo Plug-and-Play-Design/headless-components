@@ -1,8 +1,9 @@
+import type React from "react"
 import type { WithHeading, WithSubheading, WithSupportingText } from "@org/ui/components/props"
 
 export type FaqItem = {
 	question: string
-	answer: string
+	answer: React.ReactNode
 }
 
 export interface WithFaqItems {
